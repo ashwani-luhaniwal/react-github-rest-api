@@ -91,3 +91,10 @@ h1,h2,h3,h4,h5,h6 {
 .card {
     margin: 0.5rem 0rem;
 }
+.sorted-by {
+  text-align: right;
+  padding: 0.2rem 0rem;
+}
+.sort-btn {
+  margin: 0rem 0.5rem;
+}
