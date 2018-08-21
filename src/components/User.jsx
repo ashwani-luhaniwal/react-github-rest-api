@@ -36,7 +36,7 @@ class User extends React.Component {
             {
                 name: 'Public Repos',
                 value: user.public_repos,
-                url: `/user/${this.props.params.username}/repos`
+                url: `/user/${this.props.params.username}/repos?sort=full_name`
             },
             {
                 name: 'Followers',
@@ -56,7 +56,7 @@ class User extends React.Component {
                 </div>
                 <div className="user-page">
                     <div className="user-info">
-                        <Link className="user-info__text" to={`/user/${user.login}`}>
+                        <Link className="user-info__text" to={`/user/${user.login}/repos?sort=full_name`}>
                             <img className="user-info__avatar" src={user.avatar_url} alt={`${user.login} avatar`}/>
                             <h2 className="user-info__title">{user.login} ({user.name})</h2>
                             <p className="user-info__bio">{user.bio}</p>
